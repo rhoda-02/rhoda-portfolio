@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rhoda Mae Retuba · Virtual & Administrative Assistant</title>
+  <meta name="description" content="Rhoda Mae Retuba — Administrative Assistant, Virtual Assistant, and Operations Support Specialist. Turning chaos into calm." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&family=Allura&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ GLOBAL ANIMATED BACKGROUND ============ -->
+  <div class="bg-field" aria-hidden="true" data-depth="-1.1">
+    <span class="bg-line"></span>
+    <span class="bg-blob bg-blob--1"></span>
+    <span class="bg-blob bg-blob--2"></span>
+    <span class="bg-blob bg-blob--3"></span>
+    <span class="bg-ring bg-ring--1"></span>
+    <span class="bg-ring bg-ring--2"></span>
+    <span class="bg-ring bg-ring--3"></span>
+    <div class="bg-particles" id="bgParticles"></div>
+  </div>
+  <!-- mouse-follow gradient -->
+  <div class="bg-cursor" aria-hidden="true"></div>
+
+  <!-- ============ HAMBURGER ============ -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ============ DOT NAV ============ -->
+  <nav class="dotnav" id="dotnav" aria-label="Section navigation">
+    <a href="#home"      data-label="Home"><span class="dot"></span></a>
+    <a href="#about"     data-label="About"><span class="dot"></span></a>
+    <a href="#services"  data-label="Services"><span class="dot"></span></a>
+    <a href="#portfolio" data-label="Work"><span class="dot"></span></a>
+    <a href="#contact"   data-label="Contact"><span class="dot"></span></a>
+  </nav>
+
+  <!-- ============ MENU OVERLAY ============ -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <span class="menu__brand">Rhoda Mae</span>
+    <a href="#home"      class="menu__link">Home</a>
+    <a href="#about"     class="menu__link">About</a>
+    <a href="#services"  class="menu__link">Services</a>
+    <a href="#portfolio" class="menu__link">Work</a>
+    <a href="#contact"   class="menu__link">Contact</a>
+    <button class="menu__close" id="menuClose">Close</button>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero__orb" aria-hidden="true"></div>
+      <div class="hero__orb hero__orb--small" aria-hidden="true"></div>
+      <div class="rays" aria-hidden="true"></div>
+      <div class="particles" id="particles" aria-hidden="true"></div>
+
+      <div class="hero__main">
+        <!-- portrait -->
+        <div class="hero__portrait" data-reveal="scale">
+          <span class="ring ring--solid" aria-hidden="true"></span>
+          <span class="ring ring--dashed" aria-hidden="true"></span>
+          <span class="portrait-glow" aria-hidden="true"></span>
+          <span class="orbit" aria-hidden="true"><span class="orbit__dot"></span></span>
+          <span class="float-dot float-dot--1" aria-hidden="true"></span>
+          <span class="float-dot float-dot--2" aria-hidden="true"></span>
+          <span class="float-dot float-dot--3" aria-hidden="true"></span>
+          <span class="portrait-frame" aria-hidden="true"></span>
+          <div class="portrait-blob">
+            <img class="hero__photo" src="my%20photo.jpg" alt="Portrait of Rhoda Mae Retuba" />
+            <span class="portrait-sheen" aria-hidden="true"></span>
+          </div>
+          <span class="portrait-tag"><span class="ms" aria-hidden="true">verified</span> Virtual Assistant</span>
+        </div>
+
+        <!-- quote -->
+        <div class="hero__quote" data-reveal="right">
+          <span class="q q--script">The best</span>
+          <span class="q q--bold">Work Feels</span>
+          <span class="q q--stroke">Effortless</span>
+          <span class="q q--script q--mute">and</span>
+          <span class="q q--script q--pink">order</span>
+          <span class="q q--label">Turns Chaos Into</span>
+          <span class="q q--calm">Calm.</span>
+        </div>
+      </div>
+
+      <!-- mist band -->
+      <div class="mist" aria-hidden="true">
+        <span class="mist__blob mist__blob--1"></span>
+        <span class="mist__blob mist__blob--2"></span>
+        <span class="mist__blob mist__blob--3"></span>
+        <span class="mist__fade"></span>
+      </div>
+
+      <!-- logo + roles -->
+      <div class="hero__logo">
+        <span class="signature">Rhoda Mae</span>
+        <div class="hero__roles">
+          <span>Administrative Assistant</span>
+          <i aria-hidden="true">&bull;</i>
+          <span>Virtual Assistant</span>
+          <i aria-hidden="true">&bull;</i>
+          <span>Operations Support</span>
+        </div>
+      </div>
+
+      <!-- scroll cue -->
+      <a class="scrollcue" href="#about" aria-label="Scroll to About">
+        <span class="scrollcue__line"></span>
+        <span class="scrollcue__mouse"><span class="scrollcue__dot"></span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about">
+      <div class="about__topglow" aria-hidden="true"></div>
+      <div class="about__inner">
+        <div class="head reveal">
+          <div class="head__eyebrow">Who I Am</div>
+          <h2 class="head__title">About Me</h2>
+        </div>
+
+        <div class="about__row">
+          <!-- decorative office composition (replaces the portrait) -->
+          <div class="about__art" data-reveal="left" role="img" aria-label="Illustration of an organized digital workspace">
+            <span class="art-glow"></span>
+            <span class="art-ring art-ring--1"></span>
+            <span class="art-ring art-ring--2"></span>
+
+            <!-- workflow arrow -->
+            <svg class="art-piece art-piece--arrow" data-depth="1.8" viewBox="0 0 130 120" fill="none" aria-hidden="true">
+              <path d="M14 96 Q 26 34 92 30" stroke="rgba(255,155,200,.45)" stroke-width="2" stroke-dasharray="3 7" stroke-linecap="round"/>
+              <path d="M83 22 L94 30 L85 41" stroke="rgba(255,155,200,.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+            <!-- main task board -->
+            <div class="art-piece art-piece--board" data-depth="1.1">
+              <div class="art-card art-board floatC">
+                <div class="art-board__bar"><span></span><span></span><span></span><em>Today</em></div>
+                <ul class="art-board__list">
+                  <li class="done"><span class="ms">check_circle</span>Inbox triaged</li>
+                  <li class="done"><span class="ms">check_circle</span>Calendar synced</li>
+                  <li><span class="ms">radio_button_unchecked</span>Reports ready</li>
+                </ul>
+                <div class="art-board__bar2"><i></i></div>
+              </div>
+            </div>
+
+            <!-- calendar page -->
+            <div class="art-piece art-piece--cal" data-depth="2.6">
+              <div class="art-card art-cal floatA">
+                <div class="art-cal__hd">JUN</div>
+                <div class="art-cal__dy">28</div>
+              </div>
+            </div>
+
+            <!-- envelope -->
+            <div class="art-piece art-piece--mail" data-depth="3.2">
+              <div class="art-chip floatB"><span class="ms">mail</span></div>
+            </div>
+
+            <!-- folder -->
+            <div class="art-piece art-piece--folder" data-depth="-2.2">
+              <div class="art-chip art-chip--alt floatA"><span class="ms">folder</span></div>
+            </div>
+
+            <!-- sticky note -->
+            <div class="art-piece art-piece--note" data-depth="-2.8">
+              <div class="art-note floatC">
+                <span class="ms art-note__pin">push_pin</span>
+                <p>Follow up<br>with client</p>
+              </div>
+            </div>
+
+            <!-- check badge -->
+            <div class="art-piece art-piece--check" data-depth="3.6">
+              <div class="art-chip art-chip--check floatB"><span class="ms">task_alt</span></div>
+            </div>
+
+            <!-- sparkles -->
+            <span class="art-piece art-spark art-spark--1" data-depth="4">&#10038;</span>
+            <span class="art-piece art-spark art-spark--2" data-depth="3">&#10038;</span>
+            <span class="art-piece art-spark art-spark--3" data-depth="5">&#10039;</span>
+          </div>
+
+          <!-- editorial profile -->
+          <div class="about__profile" data-reveal="right">
+            <h3 class="about__name">Rhoda Mae Retuba</h3>
+            <ul class="about__roles-list">
+              <li>Administrative Assistant</li>
+              <li>Virtual Assistant</li>
+              <li>Operations Support Specialist</li>
+            </ul>
+
+            <div class="about__chips">
+              <a class="ichip" href="mailto:rhoda.rtb@gmail.com">
+                <span class="ms" aria-hidden="true">mail</span> rhoda.rtb@gmail.com
+              </a>
+              <span class="ichip">
+                <span class="ms" aria-hidden="true">place</span> Philippines
+              </span>
+              <span class="ichip ichip--ok">
+                <span class="ms" aria-hidden="true">schedule</span> Open to work
+              </span>
+            </div>
+
+            <div class="about__stats">
+              <div class="stat"><b>3+</b><span>Fields of<br>experience</span></div>
+              <div class="stat"><b>10+</b><span>Workflows<br>delivered</span></div>
+              <div class="stat"><b>~24h</b><span>Average<br>response</span></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="about__bio reveal">
+          I bring professional experience across <b><i>healthcare administration, hospitality
+          operations, and business support.</i></b> I help busy founders and teams stay
+          <b><i>organized, calm, and ahead of schedule</i></b> — turning scattered to-dos into
+          <b><i>clean, repeatable systems.</i></b> With a sharp eye for detail and a genuinely warm
+          touch, I make the behind-the-scenes work feel <b><i>effortless</i></b>, so you can focus
+          on the big picture.
+        </p>
+
+        <!-- toolkit -->
+        <div class="toolkit reveal">
+          <div class="toolkit__label">My Toolkit</div>
+          <div class="toolkit__row">
+            <div class="tool"><span class="ms">mail</span><span>Email</span></div>
+            <div class="tool"><span class="ms">calendar_month</span><span>Calendar</span></div>
+            <div class="tool"><span class="ms">table_chart</span><span>Sheets</span></div>
+            <div class="tool"><span class="ms">description</span><span>Docs</span></div>
+            <div class="tool"><span class="ms">brush</span><span>Canva</span></div>
+            <div class="tool"><span class="ms">forum</span><span>Comms</span></div>
+          </div>
+        </div>
+
+        <div class="about__cta reveal">
+          <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-resume">
+            <span class="ms" aria-hidden="true">menu_book</span>
+            View Resume
+          </a>
+          <a href="#contact" class="btn-primary">
+            <span class="ms" aria-hidden="true">chat</span>
+            Work With Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="services">
+      <div class="head reveal">
+        <div class="head__eyebrow">What I Do</div>
+        <h2 class="head__title">Services</h2>
+      </div>
+      <p class="services__hint reveal">Tap any service to see how I work, what you receive, and the tools I use.</p>
+      <!-- Cards rendered from SERVICES in script.js -->
+      <div class="services__grid stagger" id="servicesGrid"></div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="portfolio">
+      <div class="head reveal">
+        <div class="head__eyebrow">Selected Work</div>
+        <h2 class="head__title">Portfolio</h2>
+      </div>
+      <!-- Cards rendered from PROJECTS in script.js -->
+      <div class="portfolio__grid stagger" id="portfolioGrid"></div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact">
+      <div class="contact__glow" aria-hidden="true"></div>
+      <div class="contact__deco" aria-hidden="true">
+        <span class="contact__spark contact__spark--1" data-depth="3">&#10038;</span>
+        <span class="contact__spark contact__spark--2" data-depth="4.5">&#10039;</span>
+        <span class="contact__spark contact__spark--3" data-depth="2.5">&#10038;</span>
+        <span class="contact__orb contact__orb--1" data-depth="-2"></span>
+        <span class="contact__orb contact__orb--2" data-depth="-3"></span>
+      </div>
+      <div class="contact__inner" data-reveal="scale">
+        <div class="contact__card">
+          <div class="head">
+            <div class="head__eyebrow">Get In Touch</div>
+            <h2 class="head__title head__title--sm">Let's build something together</h2>
+            <p class="contact__lead">Tell me what's on your plate and I'll help you turn it into clean, calm systems — I usually reply within a few hours.</p>
+          </div>
+
+          <div class="contact__actions">
+            <a class="btn-primary" href="mailto:rhoda.rtb@gmail.com">
+              <span class="ms" aria-hidden="true">send</span> Start a Conversation
+            </a>
+            <a class="btn-ghost" href="https://www.upwork.com/freelancers/~01c11527e30bcdddea?mp_source=share" target="_blank" rel="noopener">
+              <span class="ms" aria-hidden="true">work</span> Hire me on Upwork
+            </a>
+          </div>
+
+          <div class="channels stagger">
+            <a class="channel" href="mailto:rhoda.rtb@gmail.com">
+              <span class="channel__icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">Email</span><span class="channel__handle">rhoda.rtb@gmail.com</span></span>
+            </a>
+            <a class="channel" href="https://www.linkedin.com/in/rhoda-mae-retuba-4ab462318" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">LinkedIn</span><span class="channel__handle">Rhoda Mae Retuba</span></span>
+            </a>
+            <a class="channel" href="https://www.upwork.com/freelancers/~01c11527e30bcdddea?mp_source=share" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-upwork" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">Upwork</span><span class="channel__handle">Freelancer Profile</span></span>
+            </a>
+            <a class="channel" href="https://wa.me/639562462904" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">WhatsApp</span><span class="channel__handle">+63 956 246 2904</span></span>
+            </a>
+            <a class="channel" href="https://t.me/RhodaO_o" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-telegram" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">Telegram</span><span class="channel__handle">@RhodaO_o</span></span>
+            </a>
+            <a class="channel" href="https://www.facebook.com/Rowdaaaa" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">Facebook</span><span class="channel__handle">facebook.com/Rowdaaaa</span></span>
+            </a>
+            <a class="channel" href="https://www.instagram.com/rrowmx" target="_blank" rel="noopener">
+              <span class="channel__icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+              <span class="channel__text"><span class="channel__name">Instagram</span><span class="channel__handle">@rrowmx</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__sign">
+          <span class="signature signature--sm">Rhoda Mae</span>
+          <span class="contact__quote">“Organization creates productivity. Productivity drives success.”</span>
+          <span class="contact__copy">© <span id="year"></span> Rhoda Mae Retuba · Virtual Assistant &amp; Operations Support</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CASE STUDY MODAL (populated by script.js) ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__dialog cs" role="document">
+      <button class="modal__close" id="modalClose" aria-label="Close case study"><span class="ms">close</span></button>
+
+      <div class="cs-grid">
+        <!-- Overview — slides down -->
+        <article class="cs-panel cs-panel--overview" data-depth="1.4" style="--enter-x:0px;--enter-y:-42px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">visibility</span>
+            <div class="cs-panel__label">Overview</div>
+            <p id="modalOverview"></p>
+          </div>
+        </article>
+
+        <!-- My Role — slides from left -->
+        <article class="cs-panel cs-panel--role" data-depth="2.2" style="--enter-x:-52px;--enter-y:0px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">badge</span>
+            <div class="cs-panel__label">My Role</div>
+            <p id="modalRole"></p>
+          </div>
+        </article>
+
+        <!-- Objective — slides from right -->
+        <article class="cs-panel cs-panel--obj" data-depth="2.2" style="--enter-x:52px;--enter-y:0px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">target</span>
+            <div class="cs-panel__label">Objective</div>
+            <p id="modalObjective"></p>
+          </div>
+        </article>
+
+        <!-- Screenshot — the centerpiece (click to enlarge) -->
+        <figure class="cs-shot" data-depth="0.8">
+          <button class="cs-shot__zoom" id="modalZoom" aria-label="Enlarge screenshot"><span class="ms">zoom_in</span></button>
+          <span class="cs-shot__num" id="modalNum"></span>
+          <div class="cs-shot__frame">
+            <img id="modalImg" src="" alt="" />
+          </div>
+          <figcaption class="cs-shot__cap">
+            <span class="cs-shot__cat" id="modalCat"></span>
+            <h3 class="cs-shot__title" id="modalTitle"></h3>
+          </figcaption>
+        </figure>
+
+        <!-- What I Did — slides from left -->
+        <article class="cs-panel cs-panel--did" data-depth="2.6" style="--enter-x:-52px;--enter-y:0px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">build</span>
+            <div class="cs-panel__label">What I Did</div>
+            <p id="modalDid"></p>
+          </div>
+        </article>
+
+        <!-- Result — slides from right -->
+        <article class="cs-panel cs-panel--result" data-depth="2.6" style="--enter-x:52px;--enter-y:0px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">trophy</span>
+            <div class="cs-panel__label">Result</div>
+            <p id="modalResult"></p>
+          </div>
+        </article>
+
+        <!-- Skills — slides up -->
+        <article class="cs-panel cs-panel--skills" data-depth="3" style="--enter-x:0px;--enter-y:42px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">auto_awesome</span>
+            <div class="cs-panel__label">Skills Demonstrated</div>
+            <div class="cs-tags" id="modalSkills"></div>
+          </div>
+        </article>
+
+        <!-- Tools — slides up -->
+        <article class="cs-panel cs-panel--tools" data-depth="1.6" style="--enter-x:0px;--enter-y:42px;">
+          <div class="cs-card">
+            <span class="cs-panel__icon ms" aria-hidden="true">handyman</span>
+            <div class="cs-panel__label">Tools Used</div>
+            <div class="cs-tools" id="modalTools"></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ SERVICE DRAWER (populated by script.js) ============ -->
+  <div class="drawer" id="serviceDrawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="svcTitle">
+    <div class="drawer__backdrop" data-svc-close></div>
+    <aside class="drawer__panel" role="document">
+      <button class="drawer__close" id="svcClose" aria-label="Close service details"><span class="ms">close</span></button>
+      <div class="drawer__scroll">
+        <div class="drawer__head">
+          <span class="drawer__icon ms" id="svcIcon" aria-hidden="true">work</span>
+          <span class="drawer__eyebrow">Service</span>
+          <h3 class="drawer__title" id="svcTitle"></h3>
+          <p class="drawer__desc" id="svcDesc"></p>
+        </div>
+
+        <div class="drawer__grid">
+          <div class="drawer__block">
+            <h4><span class="ms" aria-hidden="true">redeem</span> What clients receive</h4>
+            <ul class="drawer__list" id="svcReceive"></ul>
+          </div>
+
+          <div class="drawer__block">
+            <h4><span class="ms" aria-hidden="true">route</span> My workflow</h4>
+            <ol class="drawer__steps" id="svcWorkflow"></ol>
+          </div>
+
+          <div class="drawer__block">
+            <h4><span class="ms" aria-hidden="true">apps</span> Software I use</h4>
+            <div class="drawer__chips" id="svcSoftware"></div>
+          </div>
+
+          <div class="drawer__block">
+            <h4><span class="ms" aria-hidden="true">inventory_2</span> Deliverables</h4>
+            <ul class="drawer__list" id="svcDeliverables"></ul>
+          </div>
+        </div>
+
+        <div class="drawer__benefit">
+          <span class="ms" aria-hidden="true">favorite</span>
+          <p id="svcBenefit"></p>
+        </div>
+
+        <a class="btn-primary drawer__cta" href="#contact" data-svc-close>
+          <span class="ms" aria-hidden="true">send</span> Let's work together
+        </a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ LIGHTBOX (full screenshot) ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Full screenshot">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image"><span class="ms">close</span></button>
+    <img id="lightboxImg" src="" alt="" />
+    <span class="lightbox__hint">Click anywhere to close</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
